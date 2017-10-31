@@ -1,0 +1,17 @@
+{
+  "name": "Raw",
+  "description": "RAW",
+  "minimum-stability": "dev",
+  "license": "Apache 2.0",
+  "autoload": {
+    "psr-4": {
+      "Raw\\": "src/"
+    }
+  },
+  "require": {
+    "rojr/super-cms":"*"
+  },
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
