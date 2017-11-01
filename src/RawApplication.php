@@ -6,6 +6,7 @@ use Raw\Layouts\RawLayout;
 use Raw\Leaves\Home\RawIndexView;
 use Rhubarb\Crown\Application;
 use Rhubarb\Crown\Layout\LayoutModule;
+use Rhubarb\Custard\SassC\CompileScssModule;
 use Rhubarb\Stem\Repositories\MySql\MySql;
 use Rhubarb\Stem\Repositories\Repository;
 use SuperCMS\Leaves\IndexView;
@@ -35,7 +36,8 @@ class RawApplication extends Application
     protected function getModules()
     {
         return [
-            new SuperCMS($this->container())
+            new CompileScssModule(),
+            new SuperCMS($this->container()),
         ];
     }
 }

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "21e58f4aae806fce58c6cc8dee3ef607",
-    "content-hash": "eba5c01d58d02244945a8021468c0db4",
+    "hash": "3591e1ca8fadfd2c2cd5a9564795dfb7",
+    "content-hash": "ddbe10c9a8866e2d38782124e0119036",
     "packages": [
         {
             "name": "components/jquery",
@@ -500,16 +500,16 @@
         },
         {
             "name": "rhubarbphp/custard-sassc",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RhubarbPHP/Custard.SassC.git",
-                "reference": "03f3b87b74432624a08a05afe0b1e4c61c82da05"
+                "reference": "fa4547e3379c208b4b61e37d2fdb54550c7acd52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RhubarbPHP/Custard.SassC/zipball/03f3b87b74432624a08a05afe0b1e4c61c82da05",
-                "reference": "03f3b87b74432624a08a05afe0b1e4c61c82da05",
+                "url": "https://api.github.com/repos/RhubarbPHP/Custard.SassC/zipball/fa4547e3379c208b4b61e37d2fdb54550c7acd52",
+                "reference": "fa4547e3379c208b4b61e37d2fdb54550c7acd52",
                 "shasum": ""
             },
             "require": {
@@ -537,7 +537,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2016-11-10 10:33:49"
+            "time": "2017-10-02 08:40:53"
         },
         {
             "name": "rhubarbphp/module-jsvalidation",

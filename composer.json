@@ -9,7 +9,8 @@
     }
   },
   "require": {
-    "rojr/super-cms":"*"
+    "rojr/super-cms":"*",
+    "rhubarbphp/custard-sassc": "^1.0"
   },
   "config": {
     "bin-dir": "bin/"

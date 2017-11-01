@@ -2,9 +2,15 @@
 
 namespace Raw\Layouts;
 
-use Rhubarb\Patterns\Layouts\BaseLayout;
+use Rhubarb\Crown\Html\ResourceLoader;
+use SuperCMS\Layouts\SuperCMSDefaultLayout;
 
-class RawLayout extends BaseLayout
+class RawLayout extends SuperCMSDefaultLayout
 {
+    public function __construct()
+    {
+        parent::__construct();
 
+        ResourceLoader::loadResource("/static/css/main.css");
+    }
 }

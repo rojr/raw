@@ -1,0 +1,57 @@
+$basePadding:40;
+
+@mixin fill-absolute() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+.c-product-container {
+  .c-product {
+    margin: $basePadding / 2;
+    position: relative;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+
+    .c-product-images {
+      @include fill-absolute;
+
+      .c-product-image {
+        @include fill-absolute;
+        @include transition(opacity 0.4s ease-in);
+
+        height: 100%;
+        width: 100%;
+        background:center no-repeat;
+        background-size: cover;
+
+        &.__first {
+          opacity: 1;
+        }
+        &.__second {
+          opacity: 0;
+        }
+      }
+    }
+
+    &:hover {
+      .c-product-image.__first {
+        opacity:0;
+      }
+      .c-product-image.__second {
+        opacity:1;
+      }
+    }
+  }
+}
