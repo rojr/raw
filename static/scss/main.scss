@@ -17,6 +17,8 @@ $basePadding:40;
 }
 
 .c-product-container {
+  display: flex;
+  justify-content: center;
   .c-product {
     margin: $basePadding / 2;
     position: relative;
