@@ -16,6 +16,16 @@ $basePadding:40;
   transition: $transition;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+.c-main-title {
+  display: flex;
+  justify-content: center;
+  font-size: 5vw;
+  text-shadow: 2px 2px rgba(255, 161, 153, 0.31);
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .c-product-container {
   display: flex;
   justify-content: center;
