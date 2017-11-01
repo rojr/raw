@@ -19,6 +19,8 @@ $basePadding:40;
 .c-product-container {
   display: flex;
   justify-content: center;
+  flex-flow: row wrap;
+
   .c-product {
     margin: $basePadding / 2;
     position: relative;
