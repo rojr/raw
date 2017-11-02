@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3591e1ca8fadfd2c2cd5a9564795dfb7",
     "content-hash": "ddbe10c9a8866e2d38782124e0119036",
     "packages": [
         {
@@ -101,7 +100,7 @@
                 "ui"
             ],
             "abandoned": "components/chosen",
-            "time": "2016-06-23 06:51:35"
+            "time": "2016-06-23T06:51:35+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -143,7 +142,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14 14:47:48"
+            "time": "2017-05-14T14:47:48+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -234,7 +233,7 @@
                 "minification",
                 "scss"
             ],
-            "time": "2016-11-03 14:44:01"
+            "time": "2016-11-03T14:44:01+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -277,7 +276,7 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2016-07-18 04:51:16"
+            "time": "2016-07-18T04:51:16+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -403,7 +402,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-01-25 08:17:30"
+            "time": "2016-01-25T08:17:30+00:00"
         },
         {
             "name": "psr/log",
@@ -496,7 +495,7 @@
                 "rhubarb",
                 "tools"
             ],
-            "time": "2017-01-09 16:06:24"
+            "time": "2017-01-09T16:06:24+00:00"
         },
         {
             "name": "rhubarbphp/custard-sassc",
@@ -537,7 +536,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-10-02 08:40:53"
+            "time": "2017-10-02T08:40:53+00:00"
         },
         {
             "name": "rhubarbphp/module-jsvalidation",
@@ -559,7 +558,7 @@
                 "Apache 2.0"
             ],
             "description": "Provides javascript validation patterns for HTML forms",
-            "time": "2017-08-17 14:34:15"
+            "time": "2017-08-17T14:34:15+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf",
@@ -612,7 +611,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-24 14:48:57"
+            "time": "2017-08-24T14:48:57+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-common-controls",
@@ -651,7 +650,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-11 14:26:33"
+            "time": "2017-08-11T14:26:33+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-crud",
@@ -690,7 +689,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-08-24 16:23:35"
+            "time": "2017-08-24T16:23:35+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-paging",
@@ -728,7 +727,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-01-26 09:57:23"
+            "time": "2017-01-26T09:57:23+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-search-panel",
@@ -770,7 +769,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26 10:02:36"
+            "time": "2017-01-26T10:02:36+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-table",
@@ -812,7 +811,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26 09:59:45"
+            "time": "2017-01-26T09:59:45+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-tabs",
@@ -851,7 +850,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-07-31 10:38:58"
+            "time": "2017-07-31T10:38:58+00:00"
         },
         {
             "name": "rhubarbphp/module-patterns",
@@ -945,7 +944,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2017-08-29 13:41:36"
+            "time": "2017-08-29T13:41:36+00:00"
         },
         {
             "name": "rhubarbphp/rhubarb",
@@ -993,7 +992,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2017-08-30 17:00:59"
+            "time": "2017-08-30T17:00:59+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-application-settings",
@@ -1035,7 +1034,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2016-10-27 21:23:22"
+            "time": "2016-10-27T21:23:22+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-authentication",
@@ -1087,12 +1086,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RhubarbPHP/Scaffold.BackgroundTasks.git",
-                "reference": "5c766782c12162e812002c7d5f7aaab48b90b81c"
+                "reference": "63b8bd028248ee24c9dcc7837e41bf502cfca304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RhubarbPHP/Scaffold.BackgroundTasks/zipball/5c766782c12162e812002c7d5f7aaab48b90b81c",
-                "reference": "5c766782c12162e812002c7d5f7aaab48b90b81c",
+                "url": "https://api.github.com/repos/RhubarbPHP/Scaffold.BackgroundTasks/zipball/63b8bd028248ee24c9dcc7837e41bf502cfca304",
+                "reference": "63b8bd028248ee24c9dcc7837e41bf502cfca304",
                 "shasum": ""
             },
             "require": {
@@ -1123,7 +1122,7 @@
                 "rhubarb",
                 "task"
             ],
-            "time": "2017-03-09 10:26:08"
+            "time": "2017-10-04 15:24:13"
         },
         {
             "name": "rhubarbphp/scaffold-communications",
@@ -1131,12 +1130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RhubarbPHP/Scaffold.Communications.git",
-                "reference": "af97e26555ea1855f4ff73d414dc6d85dc7fa160"
+                "reference": "d6f5f6af95565c9adcb707b6e584b8fb30c8f7a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RhubarbPHP/Scaffold.Communications/zipball/af97e26555ea1855f4ff73d414dc6d85dc7fa160",
-                "reference": "af97e26555ea1855f4ff73d414dc6d85dc7fa160",
+                "url": "https://api.github.com/repos/RhubarbPHP/Scaffold.Communications/zipball/d6f5f6af95565c9adcb707b6e584b8fb30c8f7a8",
+                "reference": "d6f5f6af95565c9adcb707b6e584b8fb30c8f7a8",
                 "shasum": ""
             },
             "require": {
@@ -1177,7 +1176,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-08-29 14:01:09"
+            "time": "2017-10-17 16:27:27"
         },
         {
             "name": "rhubarbphp/scaffold-navigation-menu",
@@ -1234,12 +1233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "59f93ece022f1b5c3576de139964975561af980a"
+                "reference": "3e2b0e46bc221603792b86c74689885d394c2ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/59f93ece022f1b5c3576de139964975561af980a",
-                "reference": "59f93ece022f1b5c3576de139964975561af980a",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/3e2b0e46bc221603792b86c74689885d394c2ecd",
+                "reference": "3e2b0e46bc221603792b86c74689885d394c2ecd",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1273,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2016-07-16 01:43:54"
+            "time": "2017-10-25 16:57:15"
         },
         {
             "name": "rojr/scaffold-email-templates",
@@ -1313,12 +1312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rojr/SuperCMS.git",
-                "reference": "faab6572b711a1556b72aa45d1e92043b45ba8b5"
+                "reference": "15b093e1b456e445080d8b3d871bf50004ffb35a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/faab6572b711a1556b72aa45d1e92043b45ba8b5",
-                "reference": "faab6572b711a1556b72aa45d1e92043b45ba8b5",
+                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/15b093e1b456e445080d8b3d871bf50004ffb35a",
+                "reference": "15b093e1b456e445080d8b3d871bf50004ffb35a",
                 "shasum": ""
             },
             "require": {
@@ -1355,7 +1354,7 @@
             "license": [
                 "Apache 2.0"
             ],
-            "time": "2017-10-25 20:27:04"
+            "time": "2017-11-02 06:48:56"
         },
         {
             "name": "stripe/stripe-php",
@@ -1363,12 +1362,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "7b4a4c18a36c460291399c6a34920b7dabc11c57"
+                "reference": "0922533c9db11292c7a0aeafc27638f8f31b7fb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/7b4a4c18a36c460291399c6a34920b7dabc11c57",
-                "reference": "7b4a4c18a36c460291399c6a34920b7dabc11c57",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/0922533c9db11292c7a0aeafc27638f8f31b7fb6",
+                "reference": "0922533c9db11292c7a0aeafc27638f8f31b7fb6",
                 "shasum": ""
             },
             "require": {
@@ -1410,7 +1409,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2017-08-29 12:47:40"
+            "time": "2017-10-31 18:52:25"
         },
         {
             "name": "symfony/console",
@@ -1418,12 +1417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "e1af6f8880bbbca73999cca2cbe7718579303ea9"
+                "reference": "7fbcbad00ff2128b94c5ed6dea38706fbd2366a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/e1af6f8880bbbca73999cca2cbe7718579303ea9",
-                "reference": "e1af6f8880bbbca73999cca2cbe7718579303ea9",
+                "url": "https://api.github.com/repos/symfony/console/zipball/7fbcbad00ff2128b94c5ed6dea38706fbd2366a9",
+                "reference": "7fbcbad00ff2128b94c5ed6dea38706fbd2366a9",
                 "shasum": ""
             },
             "require": {
@@ -1479,7 +1478,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-29 23:06:25"
+            "time": "2017-10-24 14:41:02"
         },
         {
             "name": "symfony/debug",
@@ -1487,12 +1486,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "09d2d7c077eaeb2778e504b785423e3d04d69ec5"
+                "reference": "a5bb97fb9fbd0e2a5e44feb8b32bb541f8b5b7b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/09d2d7c077eaeb2778e504b785423e3d04d69ec5",
-                "reference": "09d2d7c077eaeb2778e504b785423e3d04d69ec5",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/a5bb97fb9fbd0e2a5e44feb8b32bb541f8b5b7b7",
+                "reference": "a5bb97fb9fbd0e2a5e44feb8b32bb541f8b5b7b7",
                 "shasum": ""
             },
             "require": {
@@ -1535,7 +1534,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-29 23:06:25"
+            "time": "2017-10-24 14:16:56"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1602,12 +1601,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "9794f948d9af3be0157185051275d78b24d68b92"
+                "reference": "ae1f0fe7202afcdd0ea905fe88b14c05e1be5a46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/9794f948d9af3be0157185051275d78b24d68b92",
-                "reference": "9794f948d9af3be0157185051275d78b24d68b92",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ae1f0fe7202afcdd0ea905fe88b14c05e1be5a46",
+                "reference": "ae1f0fe7202afcdd0ea905fe88b14c05e1be5a46",
                 "shasum": ""
             },
             "require": {
@@ -1643,7 +1642,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-08-03 09:34:20"
+            "time": "2017-10-24 14:12:06"
         },
         {
             "name": "twbs/bootstrap",
@@ -1651,12 +1650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "9b7d1406b922300c5d01e99026e4fffc67445185"
+                "reference": "2c2ac3356425e192f7537227508c809a14aa5850"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/9b7d1406b922300c5d01e99026e4fffc67445185",
-                "reference": "9b7d1406b922300c5d01e99026e4fffc67445185",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/2c2ac3356425e192f7537227508c809a14aa5850",
+                "reference": "2c2ac3356425e192f7537227508c809a14aa5850",
                 "shasum": ""
             },
             "replace": {
@@ -1694,7 +1693,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2016-09-22 10:06:30"
+            "time": "2017-10-04 07:51:34"
         },
         {
             "name": "vakata/jstree",
@@ -1702,12 +1701,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vakata/jstree.git",
-                "reference": "d7f39a264eba613cf550bd6693922c851e63636d"
+                "reference": "fdfd5427d0c0818ad9ca33d39ac8202d24e9d8f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vakata/jstree/zipball/d7f39a264eba613cf550bd6693922c851e63636d",
-                "reference": "d7f39a264eba613cf550bd6693922c851e63636d",
+                "url": "https://api.github.com/repos/vakata/jstree/zipball/fdfd5427d0c0818ad9ca33d39ac8202d24e9d8f0",
+                "reference": "fdfd5427d0c0818ad9ca33d39ac8202d24e9d8f0",
                 "shasum": ""
             },
             "require": {
@@ -1751,7 +1750,7 @@
             ],
             "description": "jsTree is jquery plugin, that provides interactive trees.",
             "homepage": "http://jstree.com",
-            "time": "2017-07-31 13:40:42"
+            "time": "2017-10-27 08:51:46"
         }
     ],
     "packages-dev": [],
