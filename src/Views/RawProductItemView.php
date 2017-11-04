@@ -4,6 +4,7 @@ namespace Raw\Views;
 
 use Rhubarb\Crown\Settings\HtmlPageSettings;
 use SuperCMS\Leaves\Site\Product\ProductItemView;
+use SuperCMS\Models\Product\Product;
 
 class RawProductItemView extends ProductItemView
 {
@@ -37,4 +38,31 @@ class RawProductItemView extends ProductItemView
         </div>
         <?php
     }
+
+    protected function printProductImages(Product $product)
+    {
+        $imagePath = $this->model->selectedVariation->getPrimaryImage();
+        ?>
+        <div class="c-main-product-image-outer">
+            <a href="<?= $imagePath ?>" class="product-image-view"><img class="c-main-product-image" src="<?= $imagePath ?>"></a>
+        </div>
+        <?php
+        print $this->getVariationThumbnails($this->model->selectedVariation);
+    }
+
+    public function getDeploymentPackage()
+    {
+        $package = parent::getDeploymentPackage();
+
+        $package->resourcesToDeploy[] = __DIR__ . '/RawProductItemViewBridge.js';
+
+        return $package;
+    }
+
+    protected function getViewBridgeName()
+    {
+        return 'RawProductItemViewBridge';
+    }
+
+
 }
