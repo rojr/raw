@@ -18,6 +18,14 @@ $basePadding:40;
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 
+.c-page-body {
+  display: flex;
+  justify-content: center;
+  .c-page-body--inner {
+    width:1024px;
+  }
+};
+
 .c-main-title {
   display: flex;
   justify-content: center;
@@ -33,10 +41,10 @@ $basePadding:40;
   flex-flow: row wrap;
 
   .c-product {
-    margin: $basePadding / 2;
+    margin: $basePadding / 4;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     cursor: pointer;
 
     .c-product-images {
@@ -67,6 +75,68 @@ $basePadding:40;
       .c-product-image.__second {
         opacity:1;
       }
+    }
+  }
+}
+
+.c-breadcrumb {
+  .c-breadcrumb--item {
+    &:after {
+      content: '';
+    }
+    &:last-child:after {
+      content: '>';
+    }
+    padding-right: $basePadding / 4;
+  }
+}
+
+.c-product-image-section {
+  .c-main-product-image-outer {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    margin-bottom:$basePadding / 2;
+  }
+
+  .variation-container {
+    float: left;
+    width: $basePadding * 2;
+    height: $basePadding * 2;
+    margin-right:$basePadding / 4;
+    margin-bottom:$basePadding / 4;
+    overflow: hidden;
+
+    @include transition((box-shadow 0.2s ease-in, border-radius 0.2s ease-in));
+
+    &.selected {
+      box-shadow: 0 0 0 2px #2bd0ff;
+    }
+
+    &:nth-child(even).selected {
+      -webkit-border-top-right-radius: 15px;
+      -webkit-border-bottom-left-radius: 15px;
+      -moz-border-radius-topright: 15px;
+      -moz-border-radius-bottomleft: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+
+    &:nth-child(odd).selected {
+      -webkit-border-top-left-radius: 15px;
+      -webkit-border-bottom-right-radius: 15px;
+      -moz-border-radius-topleft: 15px;
+      -moz-border-radius-bottomright: 15px;
+      border-top-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    img {
+      max-width:100%;
+      max-height:100%;
     }
   }
 }

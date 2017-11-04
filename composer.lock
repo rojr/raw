@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "3591e1ca8fadfd2c2cd5a9564795dfb7",
     "content-hash": "ddbe10c9a8866e2d38782124e0119036",
     "packages": [
         {
@@ -100,7 +101,7 @@
                 "ui"
             ],
             "abandoned": "components/chosen",
-            "time": "2016-06-23T06:51:35+00:00"
+            "time": "2016-06-23 06:51:35"
         },
         {
             "name": "erusev/parsedown",
@@ -142,7 +143,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14T14:47:48+00:00"
+            "time": "2017-05-14 14:47:48"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -233,7 +234,7 @@
                 "minification",
                 "scss"
             ],
-            "time": "2016-11-03T14:44:01+00:00"
+            "time": "2016-11-03 14:44:01"
         },
         {
             "name": "firebase/php-jwt",
@@ -276,7 +277,7 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2016-07-18T04:51:16+00:00"
+            "time": "2016-07-18 04:51:16"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -402,7 +403,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-01-25T08:17:30+00:00"
+            "time": "2016-01-25 08:17:30"
         },
         {
             "name": "psr/log",
@@ -495,7 +496,7 @@
                 "rhubarb",
                 "tools"
             ],
-            "time": "2017-01-09T16:06:24+00:00"
+            "time": "2017-01-09 16:06:24"
         },
         {
             "name": "rhubarbphp/custard-sassc",
@@ -536,7 +537,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-10-02T08:40:53+00:00"
+            "time": "2017-10-02 08:40:53"
         },
         {
             "name": "rhubarbphp/module-jsvalidation",
@@ -558,7 +559,7 @@
                 "Apache 2.0"
             ],
             "description": "Provides javascript validation patterns for HTML forms",
-            "time": "2017-08-17T14:34:15+00:00"
+            "time": "2017-08-17 14:34:15"
         },
         {
             "name": "rhubarbphp/module-leaf",
@@ -611,7 +612,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-24T14:48:57+00:00"
+            "time": "2017-08-24 14:48:57"
         },
         {
             "name": "rhubarbphp/module-leaf-common-controls",
@@ -650,7 +651,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-11T14:26:33+00:00"
+            "time": "2017-08-11 14:26:33"
         },
         {
             "name": "rhubarbphp/module-leaf-crud",
@@ -689,7 +690,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-08-24T16:23:35+00:00"
+            "time": "2017-08-24 16:23:35"
         },
         {
             "name": "rhubarbphp/module-leaf-paging",
@@ -727,7 +728,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-01-26T09:57:23+00:00"
+            "time": "2017-01-26 09:57:23"
         },
         {
             "name": "rhubarbphp/module-leaf-search-panel",
@@ -769,7 +770,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26T10:02:36+00:00"
+            "time": "2017-01-26 10:02:36"
         },
         {
             "name": "rhubarbphp/module-leaf-table",
@@ -811,7 +812,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26T09:59:45+00:00"
+            "time": "2017-01-26 09:59:45"
         },
         {
             "name": "rhubarbphp/module-leaf-tabs",
@@ -850,7 +851,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-07-31T10:38:58+00:00"
+            "time": "2017-07-31 10:38:58"
         },
         {
             "name": "rhubarbphp/module-patterns",
@@ -944,7 +945,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2017-08-29T13:41:36+00:00"
+            "time": "2017-08-29 13:41:36"
         },
         {
             "name": "rhubarbphp/rhubarb",
@@ -992,7 +993,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2017-08-30T17:00:59+00:00"
+            "time": "2017-08-30 17:00:59"
         },
         {
             "name": "rhubarbphp/scaffold-application-settings",
@@ -1034,7 +1035,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2016-10-27T21:23:22+00:00"
+            "time": "2016-10-27 21:23:22"
         },
         {
             "name": "rhubarbphp/scaffold-authentication",
@@ -1312,12 +1313,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rojr/SuperCMS.git",
-                "reference": "2c7e0d30563378ecce456f9f8c631aced12c31a3"
+                "reference": "de049f15259118f8de7913bec58e37ea47a3c8a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/2c7e0d30563378ecce456f9f8c631aced12c31a3",
-                "reference": "2c7e0d30563378ecce456f9f8c631aced12c31a3",
+                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/de049f15259118f8de7913bec58e37ea47a3c8a7",
+                "reference": "de049f15259118f8de7913bec58e37ea47a3c8a7",
                 "shasum": ""
             },
             "require": {
@@ -1354,7 +1355,7 @@
             "license": [
                 "Apache 2.0"
             ],
-            "time": "2017-11-02 08:16:56"
+            "time": "2017-11-04 00:31:12"
         },
         {
             "name": "stripe/stripe-php",
