@@ -4,9 +4,11 @@ namespace Raw;
 
 use Raw\Layouts\RawLayout;
 use Raw\Leaves\Home\RawIndexView;
+use Raw\Leaves\Style\Main;
 use Raw\Views\RawProductItemView;
 use Rhubarb\Crown\Application;
 use Rhubarb\Crown\Layout\LayoutModule;
+use Rhubarb\Crown\UrlHandlers\ClassMappedUrlHandler;
 use Rhubarb\Custard\SassC\CompileScssModule;
 use Rhubarb\Stem\Repositories\MySql\MySql;
 use Rhubarb\Stem\Repositories\Repository;
@@ -34,6 +36,20 @@ class RawApplication extends Application
 
         $this->container()->registerClass(IndexView::class, RawIndexView::class);
         $this->container()->registerClass(ProductItemView::class, RawProductItemView::class);
+    }
+
+    protected function registerUrlHandlers()
+    {
+        $this->addUrlHandlers(
+            [
+                '/css/css.css' => $css = new ClassMappedUrlHandler(Main::class)
+            ]
+        );
+
+        $css->setPriority(15);
+
+        parent::registerUrlHandlers();
+
     }
 
     protected function getModules()
