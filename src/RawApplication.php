@@ -38,20 +38,6 @@ class RawApplication extends Application
         $this->container()->registerClass(ProductItemView::class, RawProductItemView::class);
     }
 
-    protected function registerUrlHandlers()
-    {
-        $this->addUrlHandlers(
-            [
-                '/css/css.css' => $css = new ClassMappedUrlHandler(Main::class)
-            ]
-        );
-
-        $css->setPriority(15);
-
-        parent::registerUrlHandlers();
-
-    }
-
     protected function getModules()
     {
         return [

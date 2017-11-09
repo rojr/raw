@@ -11,7 +11,7 @@ class RawLayout extends SuperCMSDefaultLayout
     {
         parent::__construct();
 
-        ResourceLoader::loadResource("/css/css.css");
+        ResourceLoader::loadResource("/static/css/site.css");
     }
 
     protected function printHead()
