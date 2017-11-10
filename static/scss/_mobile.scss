@@ -1,4 +1,8 @@
 @media screen and (max-width: 766px) {
+  .c-page-body {
+    padding:$basePadding / 4;
+  }
+
   .c-full-mobile {
     width:100%;
   }
