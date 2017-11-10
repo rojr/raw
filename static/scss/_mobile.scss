@@ -18,6 +18,9 @@
       display: flex;
       justify-content: center;
       max-height: 300px;
+      .product-image-view {
+        max-height: 300px;
+      }
     }
   }
 }
