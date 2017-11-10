@@ -71,6 +71,4 @@ class RawProductItemView extends ProductItemView
     {
         return 'RawProductItemViewBridge';
     }
-
-
 }
