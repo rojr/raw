@@ -1,4 +1,5 @@
 $basePadding:40px;
+$blue: #2bd0ff;
 
 @mixin fill-absolute() {
   position: absolute;
@@ -16,7 +17,43 @@ $basePadding:40px;
   transition: $transition;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@mixin product-hover {
+  .c-product-images {
+    @include fill-absolute;
+
+    .c-product-image {
+      @include fill-absolute;
+      @include transition(opacity 0.4s ease-in);
+
+      height: 100%;
+      width: 100%;
+      background:center no-repeat;
+      background-size: cover;
+
+      &.__first {
+        opacity: 1;
+      }
+      &.__second {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      .c-product-image.__first {
+        opacity:0;
+      }
+      .c-product-image.__second {
+        opacity:1;
+      }
+    }
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+h1, h2, h3, h4, h5, h6, p, span, b, div, i, u, button {
+  font-family: 'Quicksand', sans-serif;
+}
 
 .c-page-body {
   display: flex;
@@ -31,7 +68,6 @@ $basePadding:40px;
   justify-content: center;
   font-size: 5vw;
   text-shadow: 2px 2px rgba(255, 161, 153, 0.31);
-  font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
 }
 
@@ -46,36 +82,7 @@ $basePadding:40px;
     height: 250px;
     width: 250px;
     cursor: pointer;
-
-    .c-product-images {
-      @include fill-absolute;
-
-      .c-product-image {
-        @include fill-absolute;
-        @include transition(opacity 0.4s ease-in);
-
-        height: 100%;
-        width: 100%;
-        background:center no-repeat;
-        background-size: cover;
-
-        &.__first {
-          opacity: 1;
-        }
-        &.__second {
-          opacity: 0;
-        }
-      }
-    }
-
-    &:hover {
-      .c-product-image.__first {
-        opacity:0;
-      }
-      .c-product-image.__second {
-        opacity:1;
-      }
-    }
+    @include product-hover
   }
 }
 
@@ -115,7 +122,7 @@ $basePadding:40px;
     @include transition((box-shadow 0.2s ease-in, border-radius 0.2s ease-in));
 
     &.selected {
-      box-shadow: 0 0 0 2px #2bd0ff;
+      box-shadow: 0 0 0 2px $blue;
     }
 
     &:nth-child(even).selected {
@@ -141,4 +148,36 @@ $basePadding:40px;
       max-height:100%;
     }
   }
+}
+
+.c-search-product--row {
+  margin-bottom:$basePadding;
+  height: 200px;
+  .c-product-images {
+    height: 200px;
+  }
+  @include product-hover();
+}
+
+.button {
+  background-color: transparent;
+  border:1px solid $blue;
+  padding: $basePadding / 4;
+  font-weight: bold;
+}
+
+.u-margin--left {
+  margin-left:$basePadding / 2;
+}
+
+.u-margin--right {
+  margin-right: $basePadding / 2;
+}
+
+.u-margin--bottom {
+  margin-bottom: $basePadding / 2;
+}
+
+.u-margin--top {
+  margin-top: $basePadding / 2;
 }

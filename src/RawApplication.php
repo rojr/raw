@@ -5,6 +5,7 @@ namespace Raw;
 use Raw\Layouts\RawLayout;
 use Raw\Leaves\Home\RawIndexView;
 use Raw\Leaves\Style\Main;
+use Raw\Views\RawBasketTableView;
 use Raw\Views\RawProductItemView;
 use Rhubarb\Crown\Application;
 use Rhubarb\Crown\Layout\LayoutModule;
@@ -12,7 +13,9 @@ use Rhubarb\Crown\UrlHandlers\ClassMappedUrlHandler;
 use Rhubarb\Custard\SassC\CompileScssModule;
 use Rhubarb\Stem\Repositories\MySql\MySql;
 use Rhubarb\Stem\Repositories\Repository;
+use SuperCMS\Leaves\Index;
 use SuperCMS\Leaves\IndexView;
+use SuperCMS\Leaves\Site\Basket\BasketTableView;
 use SuperCMS\Leaves\Site\Product\ProductItemView;
 use SuperCMS\SuperCMS;
 
@@ -34,8 +37,16 @@ class RawApplication extends Application
 
         LayoutModule::setLayoutClassName(RawLayout::class);
 
-        $this->container()->registerClass(IndexView::class, RawIndexView::class);
-        $this->container()->registerClass(ProductItemView::class, RawProductItemView::class);
+        $register = [
+            IndexView::class => RawIndexView::class,
+            ProductItemView::class => RawProductItemView::class,
+
+            BasketTableView::class => RawBasketTableView::class,
+        ];
+
+        foreach ($register as $from => $to) {
+            $this->container()->registerClass($from, $to);
+        }
     }
 
     protected function getModules()

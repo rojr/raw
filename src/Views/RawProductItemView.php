@@ -8,6 +8,13 @@ use SuperCMS\Models\Product\Product;
 
 class RawProductItemView extends ProductItemView
 {
+    protected function createSubLeaves()
+    {
+        parent::createSubLeaves();
+
+        $this->leaves['Variations']->addCssClassNames('u-margin--bottom');
+    }
+
     protected function printViewContent()
     {
         $product = $this->model->restModel;

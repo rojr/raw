@@ -14,6 +14,10 @@ class RawLayout extends SuperCMSDefaultLayout
         ResourceLoader::loadResource("/static/css/site.css");
     }
 
+    protected function printPageHeading()
+    {
+    }
+
     protected function printHead()
     {
         parent::printHead();
