@@ -13,7 +13,7 @@ class RawProductItemView extends ProductItemView
         parent::createSubLeaves();
 
         $this->leaves['Variations']->addCssClassNames('u-margin--bottom');
-        $this->leaves['AddToBasket']->addCssClassNames('u-margin--bottom');
+        $this->leaves['AddToBasket']->addCssClassNames('u-margin--bottom', 'button--full');
     }
 
     protected function printViewContent()
