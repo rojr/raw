@@ -12,7 +12,7 @@ class RawProductItemView extends ProductItemView
     {
         parent::createSubLeaves();
 
-        $this->leaves['Variations']->addCssClassNames('u-margin--bottom');
+        $this->leaves['Variations']->addCssClassNames('u-margin--bottom', 'dropdown', 'dropdown-full');
         $this->leaves['AddToBasket']->addCssClassNames('u-margin--bottom', 'button--full');
     }
 
@@ -52,7 +52,7 @@ class RawProductItemView extends ProductItemView
         $imagePath = $this->model->selectedVariation->getPrimaryImage();
         ?>
         <div class="c-main-product-image-outer">
-            <a href="<?= $imagePath ?>" class="product-image-view"><img class="c-main-product-image" src="<?= $imagePath ?>"></a>
+            <div class="product-image-view" style="background-image: url(<?=$imagePath?>)"></div>
         </div>
         <?php
         print $this->getVariationThumbnails($this->model->selectedVariation);
