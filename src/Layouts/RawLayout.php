@@ -37,7 +37,7 @@ class RawLayout extends SuperCMSDefaultLayout
         ?>
         <div class="c-page-body">
             <div class="c-page-body--inner">
-                <h1 class="c-main-title">Raw.lv</h1>
+                <h1 class="c-main-title">Raw</h1>
 
         <?php
     }
