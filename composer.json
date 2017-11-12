@@ -3,7 +3,6 @@
   "description": "RAW",
   "minimum-stability": "dev",
   "license": "Apache 2.0",
-  "discard-changes": true,
   "autoload": {
     "psr-4": {
       "Raw\\": "src/"
@@ -14,6 +13,7 @@
     "rhubarbphp/custard-sassc": "^1.0"
   },
   "config": {
-    "bin-dir": "bin/"
+    "bin-dir": "bin/",
+    "discard-changes": true
   }
 }
