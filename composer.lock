@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3591e1ca8fadfd2c2cd5a9564795dfb7",
     "content-hash": "ddbe10c9a8866e2d38782124e0119036",
     "packages": [
         {
@@ -47,7 +46,7 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2016-05-25 06:43:59"
+            "time": "2016-05-25T06:43:59+00:00"
         },
         {
             "name": "drmonty/chosen",
@@ -101,7 +100,7 @@
                 "ui"
             ],
             "abandoned": "components/chosen",
-            "time": "2016-06-23 06:51:35"
+            "time": "2016-06-23T06:51:35+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -143,7 +142,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2017-05-14 14:47:48"
+            "time": "2017-05-14T14:47:48+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -187,7 +186,7 @@
                 "parsedown",
                 "parser"
             ],
-            "time": "2015-11-01 10:19:22"
+            "time": "2015-11-01T10:19:22+00:00"
         },
         {
             "name": "eslider/sasscb",
@@ -234,7 +233,7 @@
                 "minification",
                 "scss"
             ],
-            "time": "2016-11-03 14:44:01"
+            "time": "2016-11-03T14:44:01+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -277,7 +276,7 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2016-07-18 04:51:16"
+            "time": "2016-07-18T04:51:16+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -354,7 +353,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2016-11-11 18:43:20"
+            "time": "2016-11-11T18:43:20+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -403,7 +402,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-01-25 08:17:30"
+            "time": "2016-01-25T08:17:30+00:00"
         },
         {
             "name": "psr/log",
@@ -450,7 +449,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "rhubarbphp/custard",
@@ -496,7 +495,7 @@
                 "rhubarb",
                 "tools"
             ],
-            "time": "2017-01-09 16:06:24"
+            "time": "2017-01-09T16:06:24+00:00"
         },
         {
             "name": "rhubarbphp/custard-sassc",
@@ -537,7 +536,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-10-02 08:40:53"
+            "time": "2017-10-02T08:40:53+00:00"
         },
         {
             "name": "rhubarbphp/module-jsvalidation",
@@ -559,7 +558,7 @@
                 "Apache 2.0"
             ],
             "description": "Provides javascript validation patterns for HTML forms",
-            "time": "2017-08-17 14:34:15"
+            "time": "2017-08-17T14:34:15+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf",
@@ -612,7 +611,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-24 14:48:57"
+            "time": "2017-08-24T14:48:57+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-common-controls",
@@ -651,7 +650,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-08-11 14:26:33"
+            "time": "2017-08-11T14:26:33+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-crud",
@@ -690,7 +689,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-08-24 16:23:35"
+            "time": "2017-08-24T16:23:35+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-paging",
@@ -728,7 +727,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-01-26 09:57:23"
+            "time": "2017-01-26T09:57:23+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-search-panel",
@@ -770,7 +769,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26 10:02:36"
+            "time": "2017-01-26T10:02:36+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-table",
@@ -812,7 +811,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-01-26 09:59:45"
+            "time": "2017-01-26T09:59:45+00:00"
         },
         {
             "name": "rhubarbphp/module-leaf-tabs",
@@ -851,7 +850,7 @@
                 "presenter",
                 "rhubarb"
             ],
-            "time": "2017-07-31 10:38:58"
+            "time": "2017-07-31T10:38:58+00:00"
         },
         {
             "name": "rhubarbphp/module-patterns",
@@ -893,7 +892,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2016-04-07 22:06:54"
+            "time": "2016-04-07T22:06:54+00:00"
         },
         {
             "name": "rhubarbphp/module-stem",
@@ -945,7 +944,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2017-08-29 13:41:36"
+            "time": "2017-08-29T13:41:36+00:00"
         },
         {
             "name": "rhubarbphp/rhubarb",
@@ -993,7 +992,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2017-08-30 17:00:59"
+            "time": "2017-08-30T17:00:59+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-application-settings",
@@ -1035,7 +1034,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2016-10-27 21:23:22"
+            "time": "2016-10-27T21:23:22+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-authentication",
@@ -1079,7 +1078,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-07-21 11:18:39"
+            "time": "2017-07-21T11:18:39+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-background-tasks",
@@ -1123,7 +1122,7 @@
                 "rhubarb",
                 "task"
             ],
-            "time": "2017-10-04 15:24:13"
+            "time": "2017-10-04T15:24:13+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-communications",
@@ -1177,7 +1176,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2017-10-17 16:27:27"
+            "time": "2017-10-17T16:27:27+00:00"
         },
         {
             "name": "rhubarbphp/scaffold-navigation-menu",
@@ -1226,7 +1225,7 @@
                 "php",
                 "rhubarb"
             ],
-            "time": "2016-08-15 16:05:38"
+            "time": "2016-08-15T16:05:38+00:00"
         },
         {
             "name": "robloach/component-installer",
@@ -1274,7 +1273,7 @@
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2017-10-25 16:57:15"
+            "time": "2017-10-25T16:57:15+00:00"
         },
         {
             "name": "rojr/scaffold-email-templates",
@@ -1305,7 +1304,7 @@
             "license": [
                 "GNU General Public License v3.0"
             ],
-            "time": "2017-08-30 17:04:10"
+            "time": "2017-08-30T17:04:10+00:00"
         },
         {
             "name": "rojr/super-cms",
@@ -1313,12 +1312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rojr/SuperCMS.git",
-                "reference": "237a8e227a0be37a74bc4c9a5f1672fa014764c3"
+                "reference": "b935d8d6c55c2d853a1188272f9b8b1cd77dcb97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/237a8e227a0be37a74bc4c9a5f1672fa014764c3",
-                "reference": "237a8e227a0be37a74bc4c9a5f1672fa014764c3",
+                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/b935d8d6c55c2d853a1188272f9b8b1cd77dcb97",
+                "reference": "b935d8d6c55c2d853a1188272f9b8b1cd77dcb97",
                 "shasum": ""
             },
             "require": {
@@ -1355,7 +1354,7 @@
             "license": [
                 "Apache 2.0"
             ],
-            "time": "2017-11-12 00:41:14"
+            "time": "2017-11-12T22:00:35+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -1410,7 +1409,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2017-10-31 18:52:25"
+            "time": "2017-10-31T18:52:25+00:00"
         },
         {
             "name": "symfony/console",
@@ -1479,7 +1478,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-24 14:41:02"
+            "time": "2017-10-24T14:41:02+00:00"
         },
         {
             "name": "symfony/debug",
@@ -1535,7 +1534,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-24 14:16:56"
+            "time": "2017-10-24T14:16:56+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1594,7 +1593,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-14 15:44:48"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/process",
@@ -1643,7 +1642,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-24 14:12:06"
+            "time": "2017-10-24T14:12:06+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -1694,7 +1693,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2017-10-04 07:51:34"
+            "time": "2017-10-04T07:51:34+00:00"
         },
         {
             "name": "vakata/jstree",
@@ -1751,7 +1750,7 @@
             ],
             "description": "jsTree is jquery plugin, that provides interactive trees.",
             "homepage": "http://jstree.com",
-            "time": "2017-10-27 08:51:46"
+            "time": "2017-10-27T08:51:46+00:00"
         }
     ],
     "packages-dev": [],
