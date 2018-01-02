@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6, p, span, b, div, i, u, button {
 
 a {
   color: $blue;
+  * {
+    color: $blue;
+  }
 }
 
 .c-page-body {
