@@ -72,7 +72,7 @@ a {
       background-color: black;
       width:100%;
       margin-top:$basePadding;
-      padding:$basePadding;
+      padding:$basePadding*2;
     }
   }
 };
@@ -181,7 +181,7 @@ a {
 
 input[type="text"] {
   background-color: transparent;
-  border: 1px solud $blue;
+  border: 1px solid $blue;
   font-size:$inputFontSize;
   height:40px;
   font-weight: bold;
