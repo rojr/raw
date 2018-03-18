@@ -1,6 +1,7 @@
-$basePadding:40px;
+$basePadding: 40px;
 $inputFontSize: 15px;
 $blue: #2bd0ff;
+$pageWidth: 1650px;
 
 @mixin fill-absolute() {
   position: absolute;
@@ -28,7 +29,7 @@ $blue: #2bd0ff;
 
       height: 100%;
       width: 100%;
-      background:center no-repeat;
+      background: center no-repeat;
       background-size: cover;
 
       &.__first {
@@ -41,10 +42,10 @@ $blue: #2bd0ff;
 
     &:hover {
       .c-product-image.__first {
-        opacity:0;
+        opacity: 0;
       }
       .c-product-image.__second {
-        opacity:1;
+        opacity: 1;
       }
     }
   }
@@ -64,31 +65,64 @@ a {
   }
 }
 
-.c-page-body {
+html {
+  height: 100%;
+}
+
+body {
   display: flex;
   justify-content: center;
-  padding:$basePadding;
-  .c-page-body--inner {
-    max-width:1650px;
+  min-height: 100%;
 
-    .c-content {
-      background-color: rgba(0, 0, 0, 0.68);
-      border:5px dashed rgba(0, 0, 0, 0.68);
-      width:100%;
-      margin-top:$basePadding;
-      padding:$basePadding*2;
+  .c-page-body {
+    max-width: $pageWidth;
+    width:100%;
+    background-color: black;
+
+    .c-page-body--inner {
+      width: 100%;
+      .c-content {
+        background-color: rgba(0, 0, 0, 0.68);
+        border: 5px dashed rgba(0, 0, 0, 0.68);
+        width: 100%;
+        margin-top: $basePadding;
+        padding: $basePadding*2;
+      }
+    }
+
+    .c-title-box {
+      display: flex;
+      justify-content: center;
+      font-size: 6vw;
+      text-shadow: 2px 2px rgba(255, 161, 153, 0.31);
+      text-transform: uppercase;
+      position: relative;
+      width: 100%;
+      background-color: white;
+
+      padding-top: $basePadding*2;
+      padding-bottom: $basePadding*2;
+
+      .c-title-box--logo {
+        max-height: 250px;
+        z-index: 5;
+        opacity: .9;
+      }
+
+      .c-title--background {
+        @include fill-absolute();
+        width: 100%;
+        height: 100%;
+        background: url('/static/images/logo/riga.png') no-repeat top;
+        background-position-y: center;
+        background-size: cover;
+        z-index: 2;
+      }
     }
   }
-};
-
-.c-main-title {
-  display: flex;
-  justify-content: center;
-  font-size: 6vw;
-  text-shadow: 2px 2px rgba(255, 161, 153, 0.31);
-  text-transform: uppercase;
-  color: white;
 }
+
+;
 
 .c-product-container {
   display: flex;
@@ -122,7 +156,7 @@ a {
     flex: 1;
     display: flex;
     justify-content: center;
-    max-height:600px;
+    max-height: 600px;
     .product-image-view {
       width: 100%;
       height: 400px;
@@ -132,15 +166,15 @@ a {
       background-repeat: no-repeat;
       @include transition((background-image 0.2s ease-in));
     }
-    margin-bottom:$basePadding / 2;
+    margin-bottom: $basePadding / 2;
   }
 
   .variation-container {
     float: left;
     width: $basePadding * 2;
     height: $basePadding * 2;
-    margin-right:$basePadding / 4;
-    margin-bottom:$basePadding / 4;
+    margin-right: $basePadding / 4;
+    margin-bottom: $basePadding / 4;
     overflow: hidden;
 
     @include transition((box-shadow 0.2s ease-in, border-radius 0.2s ease-in));
@@ -168,14 +202,14 @@ a {
     }
 
     img {
-      max-width:100%;
-      max-height:100%;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }
 
 .c-search-product--row {
-  margin-bottom:$basePadding;
+  margin-bottom: $basePadding;
   height: 200px;
   .c-product-images {
     height: 200px;
@@ -186,22 +220,22 @@ a {
 input[type="text"] {
   background-color: transparent;
   border: 1px solid $blue;
-  font-size:$inputFontSize;
-  height:40px;
+  font-size: $inputFontSize;
+  height: 40px;
   font-weight: bold;
   padding: $basePadding / 4;
 }
 
 .button {
   background-color: transparent;
-  border:1px solid $blue;
+  border: 1px solid $blue;
   padding: $basePadding / 4;
   font-weight: bold;
   height: 40px;
-  font-size:$inputFontSize;
+  font-size: $inputFontSize;
 
   &.button--full {
-    width:100%;
+    width: 100%;
   }
 
   @include transition((box-shadow 0.1s ease-in));
@@ -214,8 +248,8 @@ input[type="text"] {
 }
 
 .dropdown {
-  border:1px solid $blue;
-  font-size:$inputFontSize;
+  border: 1px solid $blue;
+  font-size: $inputFontSize;
   background-color: transparent;
   height: 40px;
 
@@ -225,7 +259,7 @@ input[type="text"] {
 }
 
 .u-margin--left {
-  margin-left:$basePadding / 2;
+  margin-left: $basePadding / 2;
 }
 
 .u-margin--right {
@@ -243,21 +277,21 @@ input[type="text"] {
 .c-video {
   position: fixed;
   top: 0;
-  left:0;
-  right:0;
-  bottom:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   video {
-    min-width:100vw;
+    min-width: 100vw;
     min-height: 100vh;
   }
 
   &:after {
     position: absolute;
     top: 0;
-    left:0;
-    right:0;
-    bottom:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.81);
     content: "";
   }
