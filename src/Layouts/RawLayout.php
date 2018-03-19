@@ -42,13 +42,15 @@ class RawLayout extends SuperCMSDefaultLayout
                 <img class="c-title-box--logo" src="/static/images/logo/mainlogo.png">
             </div>
             <div class="c-page-body--inner">
+                <div class="c-content">
         <?php
     }
 
     protected function printContent($content)
     {
         ?>
-                <?= $content ?>
+                        <?= $content ?>
+                    </div>
                 </div>
             </div>
         </div>
