@@ -2,11 +2,20 @@
 
 namespace Raw\Leaves\Home;
 
+use Rhubarb\Crown\Settings\HtmlPageSettings;
 use SuperCMS\Leaves\IndexView;
 use SuperCMS\Models\Product\Product;
 
 class RawIndexView extends IndexView
 {
+    protected function createSubLeaves()
+    {
+        parent::createSubLeaves();
+
+        $htmlSettings = HtmlPageSettings::singleton();
+        $htmlSettings->pageTitle = 'Home';
+    }
+
     protected function printViewContent()
     {
         print '<div class="c-product-container">';
@@ -35,7 +44,7 @@ class RawIndexView extends IndexView
         <div class="c-product-images">
             {$imageHtml}
         </div>
-    </div>        
+    </div
 </a>
         
 HTML;
