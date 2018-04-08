@@ -3,20 +3,21 @@
 namespace Raw\Layouts;
 
 use Rhubarb\Crown\Html\ResourceLoader;
-use Rhubarb\Crown\Settings\HtmlPageSettings;
+use Rhubarb\Crown\LoginProviders\Exceptions\NotLoggedInException;
 use SuperCMS\Layouts\SuperCMSDefaultLayout;
+use SuperCMS\LoginProviders\SCmsLoginProvider;
+use SuperCMS\Models\Shopping\Basket;
 
 class RawLayout extends SuperCMSDefaultLayout
 {
     public function __construct()
     {
-        parent::__construct();
-
+        ResourceLoader::loadResource("/files/js/jquery.js");
+        ResourceLoader::loadResource("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js");
+        ResourceLoader::loadResource("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+        ResourceLoader::loadResource("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+        ResourceLoader::loadResource("/files/css/general.css");
         ResourceLoader::loadResource("/static/css/site.css");
-    }
-
-    protected function printPageHeading()
-    {
     }
 
     protected function printHead()
@@ -57,12 +58,34 @@ class RawLayout extends SuperCMSDefaultLayout
 
     protected function printTop()
     {
+        $basket = Basket::getCurrentBasket();
+
         ?>
         <div class="c-page-body">
             <div class="c-title-box">
                 <div class="c-title--background">
                 </div>
-                <img class="c-title-box--logo" src="/static/images/logo/mainlogo.png">
+                <a class="c-title-box--logo" href="/">
+                    <img src="/static/images/logo/mainlogo.png">
+                </a>
+                <div class="c-title-box--links">
+                    <ul>
+                        <li><a href="/basket/"><i class="fas fa-shopping-basket"></i> (£<?= $basket->getTotalCost()?>/<?= $basket->getTotalQuantity()?>) Basket</a></li>
+                        <?php
+                        try {
+                            SCmsLoginProvider::getLoggedInUser();
+                            ?>
+                            <li><a href="">Sign out <i class="fas fa-sign-in-alt"></i></a></li>
+                            <?php
+                        } catch (NotLoggedInException $ex) {
+                            ?>
+                            <li><a href="/login/">Login</a></li>
+                            <li><a href="/register/">Register</a></li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
             <div class="c-page-body--inner">
                 <div class="c-content">
@@ -77,6 +100,8 @@ class RawLayout extends SuperCMSDefaultLayout
                 </div>
             </div>
         </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
         <?php
     }
 }

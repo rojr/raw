@@ -85,17 +85,14 @@ body {
         background-color: rgba(0, 0, 0, 0.68);
         border: 5px dashed rgba(0, 0, 0, 0.68);
         width: 100%;
-        margin-top: $basePadding;
-        padding: $basePadding*2;
+        padding: 0 $basePadding*2 $basePadding*2 $basePadding*2;
       }
     }
 
     .c-title-box {
       display: flex;
       justify-content: center;
-      font-size: 6vw;
       text-shadow: 2px 2px rgba(255, 161, 153, 0.31);
-      text-transform: uppercase;
       position: relative;
       width: 100%;
       background-color: white;
@@ -104,9 +101,14 @@ body {
       padding-bottom: $basePadding*2;
 
       .c-title-box--logo {
-        max-height: 250px;
         z-index: 5;
-        opacity: .9;
+        max-height: 250px;
+        text-align: center;
+
+        > img {
+          height: 100%;
+          opacity: .9;
+        }
       }
 
       .c-title--background {
@@ -117,6 +119,18 @@ body {
         background-position-y: center;
         background-size: cover;
         z-index: 2;
+      }
+
+      .c-title-box--links {
+        position: absolute;
+        font-size: 14px;
+        z-index: 10;
+        top: $basePadding;
+        right: $basePadding;
+        > ul li {
+          list-style-type: none;
+          display: inline-block;
+        }
       }
     }
   }
@@ -257,6 +271,7 @@ input[type="atext"] {
   font-size: $inputFontSize;
   background-color: transparent;
   height: 40px;
+  padding:$basePadding / 4;
 
   &:hover {
     cursor: pointer;
