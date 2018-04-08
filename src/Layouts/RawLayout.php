@@ -75,7 +75,7 @@ class RawLayout extends SuperCMSDefaultLayout
                         try {
                             SCmsLoginProvider::getLoggedInUser();
                             ?>
-                            <li><a href="">Sign out <i class="fas fa-sign-in-alt"></i></a></li>
+                            <li><a href="/login/?logout=1">Sign out <i class="fas fa-sign-in-alt"></i></a></li>
                             <?php
                         } catch (NotLoggedInException $ex) {
                             ?>

@@ -66,6 +66,14 @@ a {
 
   &:hover {
     text-decoration: none;
+    color: red;
+    * {
+      color: red;
+    }
+  }
+
+  svg {
+    fill: currentColor;
   }
 }
 
