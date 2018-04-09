@@ -80,7 +80,7 @@ class RawLayout extends SuperCMSDefaultLayout
                         } catch (NotLoggedInException $ex) {
                             ?>
                             <li><a href="/login/">Login</a></li>
-                            <li><a href="/register/">Register</a></li>
+                            <li><a href="/login/register/">Register</a></li>
                             <?php
                         }
                         ?>
