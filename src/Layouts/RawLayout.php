@@ -47,7 +47,7 @@ class RawLayout extends SuperCMSDefaultLayout
 
     protected function getTitle()
     {
-        return 'Riga Alar Wear | ' . parent::getTitle();
+        return parent::getTitle();
     }
 
     protected function printLayout($content)

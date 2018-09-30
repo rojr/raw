@@ -22,10 +22,6 @@ class RawApplication extends Application
 {
     protected function initialise()
     {
-        parent::initialise();
-
-        parent::initialise();
-
         if (file_exists(APPLICATION_ROOT_DIR . "/settings/site.config.php")) {
             include_once(APPLICATION_ROOT_DIR . "/settings/site.config.php");
         }
