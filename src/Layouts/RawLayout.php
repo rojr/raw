@@ -8,6 +8,8 @@ use SuperCMS\Layouts\SuperCMSDefaultLayout;
 use SuperCMS\LoginProviders\SCmsLoginProvider;
 use SuperCMS\Models\Shopping\Basket;
 
+use Rhubarb\Crown\Layout\LayoutModule;
+
 class RawLayout extends SuperCMSDefaultLayout
 {
     public function __construct()
@@ -53,55 +55,39 @@ class RawLayout extends SuperCMSDefaultLayout
     protected function printLayout($content)
     {
         print '<!DOCTYPE html>';
-        parent::printLayout($content);
-    }
-
-    protected function printTop()
-    {
-        $basket = Basket::getCurrentBasket();
-
         ?>
+        <html>
+        <head>
+            <title><?= $this->getTitle(); ?></title>
+            <?= ResourceLoader::getResourceInjectionHtml(); ?>
+
+            <?= LayoutModule::getHeadItemsAsHtml(); ?>
+
+            <?php $this->printHead(); ?>
+        </head>
+        <body>
+
         <div class="c-page-body">
-            <div class="c-title-box">
-                <div class="c-title--background">
-                </div>
-                <a class="c-title-box--logo" href="/">
-                    <img src="/static/images/logo/mainlogo.png">
-                </a>
-                <div class="c-title-box--links">
-                    <ul>
-                        <li><a href="/basket/"><i class="fas fa-shopping-basket"></i> (£<?= $basket->getTotalCost()?>/<?= $basket->getTotalQuantity()?>) Basket</a></li>
-                        <?php
-                        try {
-                            SCmsLoginProvider::getLoggedInUser();
-                            ?>
-                            <li><a href="/login/?logout=1">Sign out <i class="fas fa-sign-in-alt"></i></a></li>
-                            <?php
-                        } catch (NotLoggedInException $ex) {
-                            ?>
-                            <li><a href="/login/">Login</a></li>
-                            <li><a href="/login/register/">Register</a></li>
-                            <?php
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="c-page-body--inner">
-                <div class="c-content">
+            <h1 class="hold-tight-please"><?php foreach(str_split('Hold tight...') as $l) { print "<span class='tight'>{$l}</span>"; } ?></h1>
+            <script type="text/javascript">
+                let dots = document.querySelectorAll('.tight');
+
+                setInterval(function() {
+                    for (let d = 0, end = dots.length; d < end; d++) {
+                        dots[d].style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+                    }
+                }, 1200)
+            </script>
+        </div>
+        </body>
+        </html>
         <?php
     }
 
     protected function printContent($content)
     {
-        ?>
-                        <?= $content ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
-        <?php
+        //<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
+        //<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
+
     }
 }
