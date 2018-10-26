@@ -3,6 +3,7 @@
 namespace Raw;
 
 use Raw\Layouts\RawLayout;
+use Raw\Leaves\Blog\RawBlogIndexView;
 use Raw\Leaves\Home\RawIndexView;
 use Raw\Views\RawBasketTableView;
 use Raw\Views\RawProductItemView;
@@ -13,6 +14,7 @@ use Rhubarb\Custard\SassC\CompileScssModule;
 use Rhubarb\Stem\Repositories\MySql\MySql;
 use Rhubarb\Stem\Repositories\Repository;
 use SuperCMS\Controls\Search\SearchView;
+use SuperCMS\Leaves\Blog\BlogIndexPageView;
 use SuperCMS\Leaves\IndexView;
 use SuperCMS\Leaves\Site\Basket\BasketTableView;
 use SuperCMS\Leaves\Site\Product\ProductItemView;
@@ -37,6 +39,7 @@ class RawApplication extends Application
             ProductItemView::class => RawProductItemView::class,
             BasketTableView::class => RawBasketTableView::class,
             SearchView::class => RawSearchView::class,
+            BlogIndexPageView::class => RawBlogIndexView::class,
         ];
 
         foreach ($register as $from => $to) {
