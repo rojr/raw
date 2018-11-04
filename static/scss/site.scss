@@ -32,13 +32,6 @@
   box-shadow: $shadow;
 }
 
-$basePadding: 8px;
-$baseTransition: .2s;
-
-$textColor: #ecffa3;
-
-$white: #dae0d1;
-
 html, body {
   height: 100%;
   margin: 0;
@@ -48,7 +41,7 @@ html, body {
 
 h1, h2, h3, h4, h5, p, a, b, i {
   color: $textColor;
-  @include transition(color $baseTransition);
+  @include transition(color $baseTransitionTime);
 }
 
 a {
