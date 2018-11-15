@@ -1340,12 +1340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rojr/SuperCMS.git",
-                "reference": "cee67047a8b6fb8adf299151387f2536d7e716db"
+                "reference": "85c42cbf6d326ab253db3787f31cfc8a8f6cd6fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/cee67047a8b6fb8adf299151387f2536d7e716db",
-                "reference": "cee67047a8b6fb8adf299151387f2536d7e716db",
+                "url": "https://api.github.com/repos/rojr/SuperCMS/zipball/85c42cbf6d326ab253db3787f31cfc8a8f6cd6fc",
+                "reference": "85c42cbf6d326ab253db3787f31cfc8a8f6cd6fc",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1383,7 @@
             "license": [
                 "Apache-2.0"
             ],
-            "time": "2018-11-04T01:02:20+00:00"
+            "time": "2018-11-15T07:02:10+00:00"
         },
         {
             "name": "stripe/stripe-php",

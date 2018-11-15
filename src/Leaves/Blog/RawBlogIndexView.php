@@ -14,11 +14,12 @@ class RawBlogIndexView extends View
         foreach (BlogPost::find() as $blog) {
             $coverImage = $blog->CoverImage ? $blog->CoverImage->getImageUrl() : '';
             print <<<HTML
-<div class="c-blog-post" style="background-image: url('{$coverImage}'); flex-grow: {$blog->Weight}">
+<div class="c-blog-post" style="flex-grow: {$blog->Weight}">
+    <div class="c-blog-post--image" style="background-image: url('{$coverImage}');"></div>
     <div class="c-blog-post--title">
         {$blog->Title}    
     </div>
-    <a class="c-blog-post--link" href=""></a>
+    <a class="c-blog-post--link" href="{$blog->getPostUrl()}"></a>
 </div>
 HTML;
         }
