@@ -64,6 +64,8 @@ a:hover {
       filter: blur(5px);
       -webkit-filter: blur(5px); }
     .c-blog-list .c-blog-post .c-blog-post--image {
+      background-position: center;
+      background-size: cover;
       position: absolute;
       top: 0;
       left: 0;
